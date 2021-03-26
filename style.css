@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url("images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 50%;
+    position: relative;
+    height: 100vh;
+}
+.quotes{
+    position:absolute;
+    top: -30px;
+    left: 120px;
+    width: 8.5%;
+}
+.author{
+    font-size: .7em;
+}
+.job{
+    font-size: .6em;
+    color: rgb(194, 192, 192);
+}
+.left-cont{
+    font-size: 290%;
+    margin-left: 220px;
+    position: absolute;
+    z-index: 10000;
+    top: 40%;
+    padding: 0;
+    
+}
+.left-cont1{
+    flex: 1;
+}
+.right-cont{
+    flex: 1;
+    position: relative;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+.bio{
+    width: 55%;
+}
+.bio-img{
+    display: block;
+    width: 58%;
+    border-radius: 6px;
+    position: absolute;
+    top: 6rem;
+    left: 10.5rem;
+}
+.background{
+    width: 77%;
+}
+.buttons{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    left: 180px;
+}
+.next{
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 0 50% 50% 0;
+}
+.prev{
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50% 0 0 50%;
+    left: 4px;
+    position: relative;
+}
+.next:hover,.prev:hover{
+    background-color: rgb(235, 235, 235);
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 1700px){
+    .background{
+        position: relative;
+        left: 10%;
+    }
+    .left-cont{
+        font-size: 240%;
+        margin-left: 180px;
+    }
+}
+
+@media only screen and (max-width: 1450px){
+    .background{
+        position: relative;
+        left: 10%;
+    }
+    .left-cont{
+        font-size: 200%;
+        margin-left: 160px;
+        position: absolute;
+        top: 45%;
+    }
+    .buttons{
+        padding: 0;
+        position: absolute;
+        bottom: -15px;
+    }
+    
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-cont1{
+        background-color: brown;
+        order: 1;
+    }
+    .background{
+        width: 57%;
+    }
+    .bio-img{
+        width: 47%;
+        top: 65px;
+        position: absolute;
+        left: 60%;
+        right: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .left-cont{
+        font-size: 175%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        width: 80%;
+        
+    }
+    .author,.job{
+        font-size: .8em;
+    }
+    .quotes{
+        width: 80px;
+        position: absolute;
+        left: 45%;
+        top: -25px;
+    }
+    .buttons{
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(70%, -4%);
+    }
+    
+    
+}
+@media only screen and (max-width: 800px){
+    .bio-img{
+        width: 45%;
+    }
+    .background{
+        width: 60%;
+    }
+    .left-cont{
+        font-size: 150%;
+        width: 90%;
+    }
+    .buttons{
+        position: absolute;
+        bottom: 25px;
+    }
+    .right-cont{
+        width: 100%;
+    }
+}
+
